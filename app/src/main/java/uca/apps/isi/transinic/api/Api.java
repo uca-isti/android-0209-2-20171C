@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class Api {
-    private final static String URL = "https://api-0209-2.herokuapp.com";
+    private final static String URL = "https://api-0209-2.herokuapp.com/api";
 
     public static String getBase() {
         return URL + "/";
