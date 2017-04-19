@@ -9,9 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import io.realm.Realm;
 import uca.apps.isi.transinic.fragments.DashboardFragment;
 import uca.apps.isi.transinic.fragments.HomeFragment;
 import uca.apps.isi.transinic.fragments.NotificationFragment;
+import uca.apps.isi.transinic.models.Categoria;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,6 +60,19 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+    private void addCategory() {
+        // Get a Realm instance for this thread
+        Realm realm = Realm.getDefaultInstance();
+
+        realm.beginTransaction();
+        //
+        Categoria categoria = realm.createObject(Categoria.class);
+        categoria.setNombre("");
+        realm.commitTransaction();
+
+        //loadData();
     }
 
 }
