@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addCategory() {
-        // Get a Realm instance for this thread
+        // Get a Realm instance for this thread //naoisdnoaisdoaisdnoasd
         Realm realm = Realm.getDefaultInstance();
 
         realm.beginTransaction();
