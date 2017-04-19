@@ -43,3 +43,4 @@ public class Articulo {
 
     private int multa_id;
 }
+

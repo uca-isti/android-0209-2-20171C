@@ -17,6 +17,7 @@ import uca.apps.isi.transinic.models.Categoria;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
